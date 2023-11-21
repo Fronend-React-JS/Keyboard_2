@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+  }
+  
+  #output {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 676px;
+    font-size: 18px;
+  }
+
+  #btn{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    border: none;
+    color: white;
+    font-size: 16px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    z-index: 2;
+    left: 643px;
+    top: 225px;
+  }
+  
+  #keyboard {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 5px;
+  }
+
+  .container{
+    border: 2px solid black;
+    background-color: gray;
+    width: 700px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .key:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+
+  #btn:hover{
+    background-color: #e0e0e0;
+    color: #000; 
+  }
+  
+  .key.double {
+    grid-column: span 2;
+  }
+  
+  .key.triple {
+    grid-column: span 3;
+  }
+  
